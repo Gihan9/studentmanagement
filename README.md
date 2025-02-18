@@ -1,3 +1,52 @@
+# Student Management System
+http://127.0.0.1:8000/students  this is the link for dashboard in local
+This is a Laravel-based Student Management System that allows users to manage students, their qualifications, and course enrollments. It includes CRUD operations, a REST API, authentication, and AJAX functionality for dynamic updates.
+
+---
+
+## 🚀 Features
+
+- **Student Management**: Create, update, and delete students.
+- **Course Enrollment**: Assign multiple courses to students dynamically.
+- **REST API**: Fully functional API for managing students.
+- **Authentication**: Secured using Laravel Sanctum.
+- **Search & AJAX**: Search students by name or email and dynamically add/delete courses using AJAX.
+
+---
+
+## 🛠️ Installation & Setup
+
+### **1️⃣ Clone the Repository**
+git clone https://github.com/Gihan9/studentmanagement.git
+cd studentmanagement
+
+Migrations: Located in database/migrations/
+Models: app/Models/Student.php, app/Models/Course.php, etc.
+Controllers: app/Http/Controllers/StudentController.php
+Views: resources/views/students/
+API Routes: Defined in routes/api.php
+Web Routes: Defined in routes/web.php
+Seeders: database/seeders/DatabaseSeeder.php
+
+🔄 CRUD Operations
+Student Management
+Action	Route	Method
+List Students	/students	GET
+Add Student	/students/create	GET
+Store Student	/students	POST
+Edit Student	/students/{id}/edit	GET
+Update Student	/students/{id}	PUT
+Delete Student	/students/{id}	DELETE
+
+🌍 REST API Endpoints
+Endpoint	Method	Description
+/api/students	GET	List all students
+/api/students/{id}	GET	Get a single student
+/api/students	POST	Create a new student
+/api/students/{id}	PUT	Update a student
+/api/students/{id}	DELETE	Delete a student
+All API responses are returned in JSON format.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
